@@ -1,0 +1,47 @@
+<!DOCTIPE html>
+
+<html lang="ja">
+    
+<head>
+    <title>position</title>
+    <style> 
+    *{margin: 0px; padding:0px;}
+    #container
+    { position:fixed;top:100px; left: 100px;
+        background:red;
+        width: 200px; height: 200px;
+        border-radius: 100px;
+    }
+
+    #boxA
+    {position:fixed;top:100px; left: 100px;
+     background: green;
+     width: 100px; height: 100px;
+     border-radius: 100px 0px 0px 0px;
+    }
+
+    #boxB
+    {position:fixed;top:200px; left: 200px;
+     background: blue;
+     width: 100px; height: 100px;
+     border-radius: 0px 0px 100px 0px;
+    }
+       
+    
+    </style>
+  </head>
+   
+  
+    <body>
+     <table>
+         <div id="container">
+         <div id="boxA"></div>
+         <div id="boxB"></div>
+         </div> 
+     </table>
+    </body>
+</html>
+
+relative 元の位置からの相対
+absolute 親の左上から
+fixed ページの上から
